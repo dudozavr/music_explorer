@@ -143,6 +143,7 @@
         android:background="@drawable/bg_sign_up_button_solid"
         android:text="@string/sign_up_button_text"
         android:textColor="@color/color_of_text_from_button"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_conformation" />
