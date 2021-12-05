@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Music_explorer">
         <activity
-            android:name=".view.MainActivity"
+            android:name=".ui.view.SignUpActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.SignUpSuccessActivity"
+            android:name=".ui.view.SuccessActivity"
             android:exported="true" />
     </application>
 

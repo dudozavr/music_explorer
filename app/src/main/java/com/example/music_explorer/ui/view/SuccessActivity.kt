@@ -1,10 +1,10 @@
-package com.example.music_explorer.view
+package com.example.music_explorer.ui.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.music_explorer.R
 
-class SignUpSuccessActivity : AppCompatActivity() {
+class SuccessActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

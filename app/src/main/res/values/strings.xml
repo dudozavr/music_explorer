@@ -8,4 +8,5 @@
     <string name="hint_of_authorization_text">Already have an Account?</string>
     <string name="successful_sign_up">Great, sign up was successful</string>
     <string name="sign_in_text">Sign In</string>
+    <string name="text_for_invalid_sign_up">Something went wrong</string>
 </resources>
