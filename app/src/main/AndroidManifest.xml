@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.music_explorer">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Music_explorer">
         <activity
-            android:name=".ui.view.SignUpActivity"
+            android:name=".ui.view.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.view.SuccessActivity"
+            android:name=".ui.view.fragment.SignUpFragment"
+            android:exported="true" />
+        <activity
+            android:name=".ui.view.fragment.SuccessFragment"
             android:exported="true" />
     </application>
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_body_gradient"
-    tools:context=".ui.view.SignUpActivity">
+    tools:context=".ui.view.fragment.SignUpFragment">
 
     <View
         android:layout_width="0dp"
@@ -143,7 +143,6 @@
         android:background="@drawable/bg_sign_up_button_solid"
         android:text="@string/sign_up_button_text"
         android:textColor="@color/color_of_text_from_button"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_conformation" />
