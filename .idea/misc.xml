@@ -8,8 +8,11 @@
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/bg_input.xml" value="0.5703125" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/bg_sign_up_button_solid.xml" value="0.5703125" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout-v23/activity_main.xml" value="0.33" />
+        <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout-v23/layout_sign_up.xml" value="0.3307291666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/activity_sign_up_success.xml" value="0.5541666666666667" />
+        <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/layout_sign_up.xml" value="0.3307291666666667" />
+        <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/layout_sign_up_success.xml" value="0.5541666666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/sign_up_success.xml" value="0.5541666666666667" />
       </map>
     </option>

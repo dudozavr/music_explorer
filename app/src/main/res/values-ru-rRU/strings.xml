@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Музыкальный иследователь</string>
+    <string name="name_label_text">Имя</string>
+    <string name="email_label_text">Почта</string>
+    <string name="password_label_text">Пароль</string>
+    <string name="confirm_password_label_text">Подтверждение пароля</string>
+    <string name="sign_up_button_text">Регистрация</string>
+    <string name="hint_of_authorization_text">Уже есть акаунт?</string>
+    <string name="successful_sign_up">Отлично, регистрация прошла успешно</string>
+    <string name="sign_in_text">Войти</string>
+    <string name="text_for_invalid_sign_up">Что то пошло не так</string>
+</resources>
