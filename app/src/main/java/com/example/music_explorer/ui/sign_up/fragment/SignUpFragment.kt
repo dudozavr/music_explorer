@@ -1,4 +1,4 @@
-package com.example.music_explorer.ui.view.fragment
+package com.example.music_explorer.ui.sign_up.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,13 +9,16 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.viewModels
+import com.example.music_explorer.FragmentController
 import com.example.music_explorer.R
-import com.example.music_explorer.ui.view.activity.MainActivity
-import com.example.music_explorer.ui.viewmodel.SignUpViewModel
+import com.example.music_explorer.MainActivity
+import com.example.music_explorer.ui.albums.fragment.ListOfMusicFragment
+import com.example.music_explorer.ui.base_music.fragment.BaseMusicFragment
+import com.example.music_explorer.ui.sign_up.viewmodel.SignUpViewModel
 
 class SignUpFragment : Fragment() {
-    private lateinit var signUpViewModel: SignUpViewModel
+    private val signUpViewModel by viewModels<SignUpViewModel>()
     private lateinit var userName: AppCompatEditText
     private lateinit var email: AppCompatEditText
     private lateinit var password: AppCompatEditText
@@ -33,7 +36,6 @@ class SignUpFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initFields(view)
-        ViewModelProvider(owner = this)[SignUpViewModel::class.java].also { signUpViewModel = it }
 
         buttonSignUp.setOnClickListener {
             signUpViewModel.onSignOpClicked(
@@ -43,9 +45,9 @@ class SignUpFragment : Fragment() {
                 passwordConfirmation = passwordConformation.text.toString()
             )
         }
-        subscribeOnLiveData()
         refreshEditTexts()
         setEditListeners()
+        subscribeOnLiveData()
     }
 
     private fun initFields(view: View) {
@@ -60,14 +62,18 @@ class SignUpFragment : Fragment() {
 
     private fun subscribeOnLiveData() {
         signUpViewModel.isSignUpValidLiveData.observe(viewLifecycleOwner) {
-            (activity as MainActivity).openFragment(SuccessFragment())
+            if (it) {
+                (activity as FragmentController).openFragment(BaseMusicFragment(), true)
+            }
         }
         signUpViewModel.isSignUpInvalidLiveData.observe(viewLifecycleOwner) {
-            Toast.makeText(
-                context,
-                getString(R.string.text_for_invalid_sign_up),
-                Toast.LENGTH_SHORT
-            ).show()
+            if (it) {
+                Toast.makeText(
+                    context,
+                    getString(R.string.text_for_invalid_sign_up),
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 

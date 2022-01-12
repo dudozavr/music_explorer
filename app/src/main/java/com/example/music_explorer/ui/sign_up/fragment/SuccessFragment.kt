@@ -1,4 +1,4 @@
-package com.example.music_explorer.ui.view.fragment
+package com.example.music_explorer.ui.sign_up.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

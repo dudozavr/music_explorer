@@ -1,4 +1,4 @@
-package com.example.music_explorer.model.sign_up
+package com.example.music_explorer.data.network
 
 import android.util.Patterns
 

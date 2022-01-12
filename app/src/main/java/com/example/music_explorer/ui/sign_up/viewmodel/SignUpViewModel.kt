@@ -1,12 +1,12 @@
-package com.example.music_explorer.ui.viewmodel
+package com.example.music_explorer.ui.sign_up.viewmodel
 
 import androidx.lifecycle.*
-import com.example.music_explorer.model.sign_up.SignUpService
-import com.example.music_explorer.model.sign_up.SignUpServiceImpl
+import com.example.music_explorer.data.network.SignUpService
+import com.example.music_explorer.data.network.SignUpServiceImpl
 
 class SignUpViewModel : ViewModel() {
-    val isSignUpValidLiveData = MutableLiveData<Unit>()
-    val isSignUpInvalidLiveData = MutableLiveData<Unit>()
+    val isSignUpValidLiveData = MutableLiveData<Boolean>()
+    val isSignUpInvalidLiveData = MutableLiveData<Boolean>()
     val userNameLiveData = MutableLiveData<String>()
     val emailLiveData = MutableLiveData<String>()
     val passwordLiveData = MutableLiveData<String>()
@@ -25,8 +25,8 @@ class SignUpViewModel : ViewModel() {
             conformation = passwordConfirmation
         )
     ) {
-        isSignUpValidLiveData.postValue(Unit)
+        isSignUpValidLiveData.postValue(true)
     } else {
-        isSignUpInvalidLiveData.postValue(Unit)
+        isSignUpInvalidLiveData.postValue(true)
     }
 }

@@ -15,4 +15,5 @@
     <dimen name="button_sides_margin">11dp</dimen>
     <dimen name="bottom_text_margin_bottom">16dp</dimen>
     <dimen name="sign_in_margin_start">5dp</dimen>
+    <dimen name="album_item_corners_radius">12dp</dimen>
 </resources>

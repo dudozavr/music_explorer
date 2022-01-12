@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">music_explorer</string>
+    <string name="app_name">Music Explorer</string>
     <string name="name_label_text">Name</string>
     <string name="email_label_text">Email</string>
     <string name="password_label_text">Password</string>
@@ -9,4 +9,12 @@
     <string name="successful_sign_up">Great, sign up was successful</string>
     <string name="sign_in_text">Sign In</string>
     <string name="text_for_invalid_sign_up">Something went wrong</string>
+    <string name="your_favorites_text">Your favorites</string>
+    <string name="recommended_playlists_text">Recommended playlists</string>
+    <string name="search_icon_text">Search</string>
+    <string name="profile_icon_text">Profile</string>
+    <string name="not_implemented_text">Not implemented yet</string>
+    <string name="home_title_text">Home</string>
+    <string name="explore_title_text">Explore</string>
+    <string name="library_title_text">Library</string>
 </resources>

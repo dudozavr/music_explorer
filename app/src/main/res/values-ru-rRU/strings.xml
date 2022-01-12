@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Музыкальный иследователь</string>
+    <string name="app_name">Music Explorer</string>
     <string name="name_label_text">Имя</string>
     <string name="email_label_text">Почта</string>
     <string name="password_label_text">Пароль</string>
@@ -10,4 +10,12 @@
     <string name="successful_sign_up">Отлично, регистрация прошла успешно</string>
     <string name="sign_in_text">Войти</string>
     <string name="text_for_invalid_sign_up">Что то пошло не так</string>
+    <string name="your_favorites_text">Твои любимые</string>
+    <string name="recommended_playlists_text">Рекомендуемые плейлисты</string>
+    <string name="search_icon_text">Поиск</string>
+    <string name="profile_icon_text">Профиль</string>
+    <string name="home_title_text">Главная</string>
+    <string name="not_implemented_text">Еще не реализовано</string>
+    <string name="explore_title_text">Иследовать</string>
+    <string name="library_title_text">Библиотека</string>
 </resources>
