@@ -8,8 +8,8 @@
     <string name="sign_up_button_text">Регистрация</string>
     <string name="hint_of_authorization_text">Уже есть акаунт?</string>
     <string name="successful_sign_up">Отлично, регистрация прошла успешно</string>
-    <string name="sign_in_text">Войти</string>
     <string name="text_for_invalid_sign_up">Что то пошло не так</string>
+    <string name="text_for_invalid_sign_in">Ошибка авторизации, создайте акаунт</string>
     <string name="your_favorites_text">Твои любимые</string>
     <string name="recommended_playlists_text">Рекомендуемые плейлисты</string>
     <string name="search_icon_text">Поиск</string>
@@ -18,4 +18,11 @@
     <string name="not_implemented_text">Еще не реализовано</string>
     <string name="explore_title_text">Иследовать</string>
     <string name="library_title_text">Библиотека</string>
+    <string name="sign_in_text">Вход</string>
+    <string name="forgot_password_text">Забыли пароль?</string>
+    <string name="click_here_text">Нажмите здесь</string>
+    <string name="need_an_account_text">Нужен акаунт?</string>
+    <string name="sign_up_text">Регистрация</string>
+    <string name="auth_check_box_text">Запомнить email и пароль</string>
+    <string name="log_out_text">Выйти</string>
 </resources>

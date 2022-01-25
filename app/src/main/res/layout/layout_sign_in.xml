@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_auth_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/logo_margin_top"
+        android:src="@drawable/ic_sign_in_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:text="@string/sign_in_text"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/email"
+        style="@style/edit_text_style"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="@string/email_label_text"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        style="@style/edit_text_style.password"
+        android:hint="@string/password_label_text"
+        app:layout_constraintBottom_toTopOf="@+id/save_credentials_check_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/save_credentials_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_sides_margin"
+        android:layout_marginEnd="@dimen/button_sides_margin"
+        android:buttonTint="@color/bg_button_color"
+        android:textColor="@color/bg_button_color"
+        android:text="@string/auth_check_box_text"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/button_sides_margin"
+        android:layout_marginTop="@dimen/field_margin_top"
+        android:layout_marginEnd="@dimen/button_sides_margin"
+        android:background="@drawable/bg_sign_up_button_solid"
+        android:text="@string/sign_in_text"
+        android:textColor="@color/color_of_text_from_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_credentials_check_box" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hint_of_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="@dimen/bottom_text_margin_bottom"
+        android:text="@string/forgot_password_text"
+        android:textColor="@color/hint_text_color"
+        android:textSize="@dimen/field_text_size"
+        app:layout_constraintEnd_toStartOf="@+id/click_here_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/click_here_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sign_in_margin_start"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="@dimen/bottom_text_margin_bottom"
+        android:text="@string/click_here_text"
+        android:textColor="@color/bg_button_color"
+        android:textSize="@dimen/field_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hint_of_forgot_password"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/facebook_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintEnd_toStartOf="@+id/google_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/click_here_text_view" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/google_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/click_here_text_view" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/twitter_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_twitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/google_logo"
+        app:layout_constraintTop_toBottomOf="@+id/click_here_text_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hint_of_authorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_text_margin_bottom"
+        android:text="@string/need_an_account_text"
+        android:textColor="@color/hint_text_color"
+        android:textSize="@dimen/field_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sign_up_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sign_up_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sign_in_margin_start"
+        android:layout_marginBottom="@dimen/bottom_text_margin_bottom"
+        android:text="@string/sign_up_text"
+        android:textColor="@color/bg_button_color"
+        android:textSize="@dimen/field_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hint_of_authorization" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

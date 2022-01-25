@@ -1,6 +1,6 @@
 package com.example.music_explorer.data.network
 
-interface SignUpService {
+interface AuthService {
 
     fun isSignUpValid(
         name: String,
@@ -8,4 +8,11 @@ interface SignUpService {
         password: String,
         conformation: String
     ): Boolean
+
+    fun isSignInValid(
+        email: String,
+        password: String,
+    ): Boolean
+
+    fun getToken(): Int
 }

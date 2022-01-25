@@ -16,8 +16,7 @@
             style="@style/Toolbar_style"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:popupTheme="@style/AppTheme">
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
@@ -50,9 +49,11 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        style="@style/Toolbar_style"
         android:elevation="4dp"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemRippleColor="@color/bg_header_color"
+        app:itemTextColor="@color/bottom_nav_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

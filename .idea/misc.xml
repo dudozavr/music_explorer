@@ -10,14 +10,17 @@
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/bg_input_solid.xml" value="0.5601851851851852" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/bg_sign_up_button_solid.xml" value="0.5703125" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_album_toolbar_navigation.xml" value="0.5703125" />
+        <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_auth_header.xml" value="0.346875" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_ellipse_1.xml" value="0.3776041666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_home_navigation.xml" value="0.5703125" />
+        <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_home_run_1__1_.xml" value="0.4083333333333333" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_logo_3.xml" value="0.3776041666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_profile.xml" value="0.3776041666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_query_builder_navigation.xml" value="0.5703125" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_search.xml" value="0.3776041666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_storage_navigation.xml" value="0.5703125" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/ic_toolbar_profile.xml" value="0.3776041666666667" />
+        <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/icon_gradient_color.xml" value="0.5703125" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/drawable/layout_album_background.xml" value="0.33" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout-v23/activity_main.xml" value="0.33" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout-v23/layout_sign_up.xml" value="0.3307291666666667" />
@@ -30,11 +33,13 @@
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/layout_library_tab.xml" value="0.5541666666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/layout_menu_item.xml" value="0.3614583333333333" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/layout_music_list.xml" value="0.5" />
+        <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/layout_sign_in.xml" value="0.5" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/layout_sign_up.xml" value="0.3307291666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/layout_sign_up_success.xml" value="0.5541666666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/layout/sign_up_success.xml" value="0.5541666666666667" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/menu/album_toolbar_menu.xml" value="0.67" />
         <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/menu/bottom_nav_menu.xml" value="0.5541666666666667" />
+        <entry key="..\:/Projects/Android/HW_3/music_explorer/app/src/main/res/menu/profil_icon_menu.xml" value="0.3307291666666667" />
       </map>
     </option>
   </component>

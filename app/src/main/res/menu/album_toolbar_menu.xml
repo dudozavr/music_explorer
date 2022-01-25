@@ -5,13 +5,21 @@
     <item
         android:id="@+id/search_button"
         android:icon="@drawable/ic_search"
-        app:showAsAction="ifRoom"
-        android:title="@string/search_icon_text" />
+        android:title="@string/search_icon_text"
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/profile_icon"
         android:icon="@drawable/ic_toolbar_profile"
-        app:showAsAction="ifRoom"
-        android:title="@string/profile_icon_text" />
+        android:title="@string/profile_icon_text"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/log_out"
+                android:title="@string/log_out_text"
+                app:showAsAction="ifRoom" />
+        </menu>
+
+    </item>
 
 </menu>

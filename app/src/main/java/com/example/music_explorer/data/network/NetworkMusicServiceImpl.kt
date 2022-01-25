@@ -4,6 +4,10 @@ import com.example.music_explorer.data.entity.Album
 
 class NetworkMusicServiceImpl() : NetworkMusicService {
 
+    override fun getFavoriteAlbums() = listOfFavoritesAlbums
+
+    override fun getRecommendedAlbums() = listOfRecommendedAlbums
+
     private val listOfFavoritesAlbums = listOf<Album>(
         Album(
             "Abbey Road",
@@ -73,8 +77,4 @@ class NetworkMusicServiceImpl() : NetworkMusicService {
             "https://lastfm.freetls.fastly.net/i/u/770x0/83222b653ba5456dbd61cde3a9a108fc.jpg"
         )
     )
-
-    override fun getFavoriteAlbums() = listOfFavoritesAlbums
-
-    override fun getRecommendedAlbums() = listOfRecommendedAlbums
 }

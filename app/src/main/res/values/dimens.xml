@@ -2,7 +2,7 @@
 <resources>
     <dimen name="header_sign_up_height">182dp</dimen>
     <dimen name="logo_size">120dp</dimen>
-    <dimen name="logo_margin_top">36dp</dimen>
+    <dimen name="logo_margin_top">48dp</dimen>
     <dimen name="title_margin_top">51dp</dimen>
     <dimen name="title_text_size">20sp</dimen>
     <dimen name="field_margin_top">14dp</dimen>

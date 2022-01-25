@@ -1,9 +1,12 @@
 package com.example.music_explorer.ui.albums.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.*
 import com.example.music_explorer.data.entity.Album
 import com.example.music_explorer.data.network.NetworkMusicService
 import com.example.music_explorer.data.network.NetworkMusicServiceImpl
+import com.example.music_explorer.data.storage.preferences.AppPreferences
+import com.example.music_explorer.data.storage.preferences.AppPreferencesImpl
 
 class AlbumListViewModel : ViewModel(), LifecycleEventObserver {
     val favoriteAlbums = MutableLiveData<List<Album>>()

@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.commit
 import com.example.music_explorer.FragmentController
-import com.example.music_explorer.MainActivity
 import com.example.music_explorer.R
-import com.example.music_explorer.ui.sign_up.fragment.SignUpFragment
+import com.example.music_explorer.ui.sign_in.fragment.SignInFragment
 
 class BaseAuthFragment : Fragment(), FragmentController {
 
@@ -23,21 +23,27 @@ class BaseAuthFragment : Fragment(), FragmentController {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        openFragment(SignUpFragment())
+        openFragment(SignInFragment())
     }
 
     override fun openFragment(fragment: Fragment, doClearBackStack: Boolean) {
         if (doClearBackStack) {
             clearBackStack()
         }
-        parentFragmentManager
-            .beginTransaction()
-            .replace(R.id.base_auth_fragment_container, fragment, fragment.toString())
-            .addToBackStack(null)
-            .commit()
+        childFragmentManager.commit {
+            setCustomAnimations(
+                R.anim.slide_in,
+                R.anim.fade_out,
+                R.anim.fade_in,
+                R.anim.slide_out
+            )
+            replace(R.id.base_auth_fragment_container, fragment, fragment.toString())
+            setReorderingAllowed(true)
+            addToBackStack(null)
+        }
     }
 
     private fun clearBackStack(backStackName: String? = null) {
-        parentFragmentManager.popBackStack(backStackName, FragmentManager.POP_BACK_STACK_INCLUSIVE)
+        childFragmentManager.popBackStack(backStackName, FragmentManager.POP_BACK_STACK_INCLUSIVE)
     }
 }

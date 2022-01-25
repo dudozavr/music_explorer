@@ -7,8 +7,8 @@
     <string name="sign_up_button_text">Sign Up</string>
     <string name="hint_of_authorization_text">Already have an Account?</string>
     <string name="successful_sign_up">Great, sign up was successful</string>
-    <string name="sign_in_text">Sign In</string>
     <string name="text_for_invalid_sign_up">Something went wrong</string>
+    <string name="text_for_invalid_sign_in">Auth error, create account</string>
     <string name="your_favorites_text">Your favorites</string>
     <string name="recommended_playlists_text">Recommended playlists</string>
     <string name="search_icon_text">Search</string>
@@ -17,4 +17,11 @@
     <string name="home_title_text">Home</string>
     <string name="explore_title_text">Explore</string>
     <string name="library_title_text">Library</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="forgot_password_text">Forgot password?</string>
+    <string name="click_here_text">Click Here</string>
+    <string name="need_an_account_text">Need an Account?</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="auth_check_box_text">Remember email and password</string>
+    <string name="log_out_text">Logout</string>
 </resources>
