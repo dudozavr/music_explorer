@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.music_explorer.R
-import com.example.music_explorer.data.entity.Album
+import com.example.music_explorer.data.storage.room.entity.Album
 
 class AlbumRecyclerViewAdapter(
     private val albums: List<Album>,

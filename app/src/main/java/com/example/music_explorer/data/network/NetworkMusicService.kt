@@ -1,10 +1,10 @@
 package com.example.music_explorer.data.network
 
-import com.example.music_explorer.data.entity.Album
+import com.example.music_explorer.data.storage.room.entity.Album
 
 interface NetworkMusicService {
 
-    fun getFavoriteAlbums(): List<Album>
+    suspend fun getFavoriteAlbums(): List<Album>
 
-    fun getRecommendedAlbums(): List<Album>
+    suspend fun getRecommendedAlbums(): List<Album>
 }

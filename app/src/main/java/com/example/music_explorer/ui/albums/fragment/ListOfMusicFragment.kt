@@ -5,13 +5,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.music_explorer.R
+import com.example.music_explorer.data.storage.room.AppDataBaseImpl
 import com.example.music_explorer.ui.albums.viewmodel.AlbumListViewModel
 
 class ListOfMusicFragment : Fragment() {
@@ -35,6 +34,8 @@ class ListOfMusicFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        viewModel.setAlbumDao(AppDataBaseImpl.getInstance(requireContext()).getAlbumDao())
+
         favouritesAlbumsRecycleView = view.findViewById(R.id.list_of_favourites_albums)
         customizeRecycleView(favouritesAlbumsRecycleView)
         recommendedAlbumsRecycleView = view.findViewById(R.id.list_of_recommended_albums)
@@ -45,12 +46,12 @@ class ListOfMusicFragment : Fragment() {
     }
 
     private fun subscribeToLiveData() {
-        viewModel.favoriteAlbums.observe(viewLifecycleOwner, { albums ->
+        viewModel.favoriteAlbumsLiveData.observe(viewLifecycleOwner, { albums ->
             favouritesAlbumsRecycleView.adapter = AlbumRecyclerViewAdapter(albums) { album ->
                 Log.d(TAG, album.toString())
             }
         })
-        viewModel.recommendedAlbums.observe(viewLifecycleOwner, { albums ->
+        viewModel.recommendedAlbumsLiveData.observe(viewLifecycleOwner, { albums ->
             recommendedAlbumsRecycleView.adapter = AlbumRecyclerViewAdapter(albums) { album ->
                 Log.d(TAG, album.toString())
             }

@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.example.music_explorer.R
-import com.example.music_explorer.data.entity.Album
+import com.example.music_explorer.data.storage.room.entity.Album
 
 class AlbumViewHolder(private val view: View, val selectedItem: (Album) -> Unit) :
     ViewHolder(view) {
